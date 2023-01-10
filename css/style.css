@@ -193,12 +193,7 @@ padding:16px 32px;
   margin-bottom: 8px;
 }
 
-.test-icon::before{
-  background-image: url(../images/icons.svg/antenna.svg);
-  background-position: center;
-  display: block;
-  
-}
+
 
 .skills-visually-hidden{
 position: absolute;
@@ -321,7 +316,38 @@ letter-spacing: 0.02em;
 color: var(--second-color);
 }
 
+.customers-caption{
+min-width: 162px;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--first-color);
+margin-bottom: 72px;
+}
 
+.customers{
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-list{
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item{
+  width: calc((100% - 120px) / 6);
+  width: 168px;
+  height: 88px;
+  background-color:#FFFFFF;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
