@@ -193,6 +193,13 @@ padding:16px 32px;
   margin-bottom: 8px;
 }
 
+.test-icon::before{
+  background-image: url(../images/icons.svg/antenna.svg);
+  background-position: center;
+  display: block;
+  
+}
+
 .skills-visually-hidden{
 position: absolute;
 width: 1px;
