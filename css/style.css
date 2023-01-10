@@ -381,6 +381,49 @@ margin-bottom: 72px;
   justify-content: center;
 }
 
+.background-yaco{
+ background-image: url(../images/icons.svg/yaco.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.background-company{
+ background-image: url(../images/icons.svg/company.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.background-company-1{
+ background-image: url(../images/icons.svg/company-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.background-foster{
+ background-image: url(../images/icons.svg/foster.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.background-brand{
+ background-image: url(../images/icons.svg/brand.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.background-company-2{
+ background-image: url(../images/icons.svg/company-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 
 
 /*-------------PORTFOLIO.MAIN-------------*/
@@ -511,4 +554,55 @@ letter-spacing: 0.02em;
 color: #E7E9FC;
 margin-top:16px;
 }
-    
+
+
+.social-media{
+  flex-grow: -1;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-info{
+font-size: 16px;
+line-height: var(--first-typical-lh);
+letter-spacing: 0.02em;
+color: var(--third-color);
+display: flex;
+align-items: center;
+}
+
+
+.social-media-list{
+  display:flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-media-item{
+  width: calc((100% - 48px) / 4);
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link{
+  width: 100%;
+  height: 100%;
+  background-color: #434455;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icon{
+  fill:#F4F4FD;
+}
+   
+
+.social-media-icon:hover{
+fill: #404BBF;
+}
