@@ -348,6 +348,30 @@ letter-spacing: 0.02em;
 color: var(--second-color);
 }
 
+.info-link{
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-list{
+  display:flex;
+  gap: 24px;
+}
+
+.icon-item{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-navigation{
+  fill:#F4F4FD;
+}
+
 .customers-caption{
 min-width: 162px;
 font-size: 36px;
@@ -524,6 +548,10 @@ color: var(--second-color);
 
  /*-------------INDEX-AND-PORTFOLIO.FOOTER-------------*/
 
+.footer>.container{
+  display: flex;
+}
+
 .footer{
 background-color: var(--first-color);
 padding-top: 100px;
@@ -556,13 +584,9 @@ margin-top:16px;
 }
 
 
-.social-media{
-  flex-grow: -1;
-}
 
 .footer-social{
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -578,12 +602,12 @@ align-items: center;
 
 .social-media-list{
   display:flex;
-  justify-content: center;
   gap: 16px;
+  margin-top: 16px;
+  margin-left: 120px;
 }
 
 .social-media-item{
-  width: calc((100% - 48px) / 4);
   width: 40px;
   height: 40px;
 }
@@ -600,9 +624,4 @@ align-items: center;
 
 .social-media-icon{
   fill:#F4F4FD;
-}
-   
-
-.social-media-icon:hover{
-fill: #404BBF;
 }
