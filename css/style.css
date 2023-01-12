@@ -464,9 +464,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background-position: center;
   fill: var(--fiveth-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-company{
@@ -474,45 +471,30 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background-position: center;
     fill: var(--fiveth-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-company-1{
  background-image: url(../images/icons.svg/company-1.svg);
   background-repeat: no-repeat;
   background-position: center;
-    fill: var(--fiveth-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--fiveth-color);
 }
 .customers-foster{
  background-image: url(../images/icons.svg/foster.svg);
   background-repeat: no-repeat;
   background-position: center;
     fill: var(--fiveth-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-brand{
  background-image: url(../images/icons.svg/brand.svg);
   background-repeat: no-repeat;
   background-position: center;
     fill: var(--fiveth-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-company-2{
  background-image: url(../images/icons.svg/company-2.svg);
   background-repeat: no-repeat;
   background-position: center;
-    fill: var(--fiveth-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--fiveth-color);
 }
 
 .customers-link:hover{
@@ -711,26 +693,3 @@ align-items: center;
 
 
 
-.social-media-instagram{
-  background-image: url(../images/icons.svg/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-media-twitter{
-  background-image: url(../images/icons.svg/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-media-facebook{
-  background-image: url(../images/icons.svg/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-media-linkedin{
-  background-image: url(../images/icons.svg/linkedin.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
