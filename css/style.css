@@ -138,6 +138,10 @@ background-color: var(--second-color);
 text-align: center;
 padding-top: 188px;
 padding-bottom: 188px;
+width: 1440px;
+margin-right: auto;
+margin-left: auto;
+display: block;
 }
 
 .section{
@@ -178,65 +182,10 @@ padding:16px 32px;
 }
 
 .section-btn:hover{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.section-btn:active{
-  background-color: #404BBF;
+  background: #404BBF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-
-.test{
-  padding-top: 120px;
-}
-
-.test-list{
-  display: flex;
-  gap: 24px;
-}
-.test-item{
-  width: calc((100% - 72px) / 4);
-  height: 112px;
-  background-color:#F4F4FD;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.background-antenna{
-  background-image: url(../images/icons.svg/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.background-clock{
-  background-image: url(../images/icons.svg/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.background-diagram{
-  background-image: url(../images/icons.svg/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.background-astronaut{
-  background-image: url(../images/icons.svg/astronaut.svg);  
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 
 
 
@@ -254,6 +203,8 @@ overflow: hidden;
 }
 
 .skills{
+  flex-direction: column;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -261,6 +212,16 @@ overflow: hidden;
 .skills-list{
   display: flex;
   gap: 24px;
+}
+
+.background-navigation{
+  background-color: #F4F4FD;
+  border-radius: 4px;
+  height: 112px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-pages{
@@ -274,6 +235,7 @@ line-height: 1.20;
 letter-spacing: 0.02em;
 color: var(--first-color);
 }
+
 
 .skills-paragraph{ 
 font-size: 16px;
@@ -310,6 +272,7 @@ margin-bottom: 72px;
 
 .info{
 background-color: #F4F4FD;
+padding-top: 120px;
 padding-bottom: 120px;
 }
 
@@ -390,27 +353,9 @@ color: var(--second-color);
     background-color:  #404BBF;
   }
 
-.icon-instagram{
-  background-image: url(../images/icons.svg/instagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-twitter{
-  background-image: url(../images/icons.svg/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-facebook{
-  background-image: url(../images/icons.svg/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-linkedin{
-  background-image: url(../images/icons.svg/linkedin.svg);
-  background-repeat: no-repeat;
+.icon-navigation{
+  fill: #F4F4FD;
+ background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -457,41 +402,16 @@ justify-content: center;
 }
 
 .customers-yaco{
-  background-image: url(../images/icons.svg/yaco.svg);
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
   background-position: center;
   fill: var(--fiveth-color);
 }
 
-.customers-company{
- background-image: url(../images/icons.svg/company.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-    fill: var(--fiveth-color);
-}
-.customers-company-1{
- background-image: url(../images/icons.svg/company-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  fill: var(--fiveth-color);
-}
-.customers-foster{
- background-image: url(../images/icons.svg/foster.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-    fill: var(--fiveth-color);
-}
-.customers-brand{
- background-image: url(../images/icons.svg/brand.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-    fill: var(--fiveth-color);
-}
-.customers-company-2{
- background-image: url(../images/icons.svg/company-2.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  fill: var(--fiveth-color);
+
+.customers-navigation{
+background-repeat: no-repeat;
+background-position: center;
+fill: var(--fiveth-color);
 }
 
 .customers-link:hover{
@@ -502,7 +422,7 @@ justify-content: center;
   border-color: var(--first-border-color);
 }
 
-.customers-link:hover .customers-yaco{
+.customers-link:hover .customers-navigation{
   fill: var(--sixth-color);
 }
 
@@ -567,9 +487,20 @@ padding: 12px 24px;
   column-gap: 24px;
   row-gap: 48px;
   margin-top: 72px;
-  flex-basis: calc((100%-48px)/3);
+  flex-basis: calc((100% - 48px) / 3);
   
 }
+     
+.link-nav{
+  display:block;
+}
+
+.link-nav:hover,
+.link-nav:focus{
+ border:  0.5px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .navigation{
   width: 360px;
@@ -583,10 +514,6 @@ padding: 12px 24px;
 }
 
 
-.navigation:hover{
-  border: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 
   .photo{
@@ -663,7 +590,6 @@ font-size: 16px;
 line-height: var(--first-typical-lh);
 letter-spacing: 0.02em;
 color: var(--third-color);
-display: flex;
 align-items: center;
 margin-bottom: 16px;
 }
@@ -694,26 +620,9 @@ margin-bottom: 16px;
   background-color:#31D0AA ;
 }
 
-.social-media-instagram{
-  background-image: url(../images/icons.svg/instagram-1.svg);
+.social-media-navigation{
+  fill:#f4f4fd;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.social-media-twitter{
-  background-image: url(../images/icons.svg/twitter-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-media-facebook{
-  background-image: url(../images/icons.svg/facebook-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social-media-linkedin{
-  background-image: url(../images/icons.svg/linkedin-1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
